@@ -7,8 +7,65 @@
   </head>
   <body>
     <h1>Forms Demo</h1>
-    <form action="">
-      <input type="password" placeholder="Enter Password" />
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a Username:</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter A password:</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          name="Password"
+        />
+      </p>
+      <p>
+        <label for="number">Enter a number</label>
+        <input id="number" type="number" placeholder="Number" name="num" />
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+
+    <h1>Google Search</h1>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+
+    <hr />
+    <h2>More inputs</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I agree to TOS</label>
+      <p>
+        <input type="radio" name="size" id="XS" value="XS" />
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="S" value="S" />
+        <label for="S">S</label>
+        <input type="radio" name="size" id="M" value="M" />
+        <label for="M">M</label>
+        <input type="radio" name="size" id="L" value="L" />
+        <label for="L">L</label>
+      </p>
+      <p>
+        <label for="Meal">Please Select a meal</label>
+        <select name="meal" id="Meal">
+          <option value="">Please Choose a Meal</option>
+          <option value="Fish">Fish</option>
+          <option value="Steak">Steak</option>
+          <option value="Vegetarian" selected>Vegetarian</option>
+          <option value="Pasta">Pasta</option>
+        </select>
+      </p>
+      <button>Submit</button>
     </form>
   </body>
 </html>
