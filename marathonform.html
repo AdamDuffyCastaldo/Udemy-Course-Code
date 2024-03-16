@@ -14,36 +14,37 @@
         <label for="Last Name">Last Name</label>
         <input type="text" name="last" id="Last Name" required />
       </p>
+
       <p>Select an Event:</p>
       <div>
-        <input type="radio" id="Fun5k" />
+        <input type="radio" id="Fun5k" name="Distance" value="Fun Run 5k" />
         <label for="Fun5k">Fun Run 5k</label>
       </div>
 
       <div>
-        <input type="radio" id="HalfM" />
+        <input type="radio" id="HalfM" name="Distance" value="Half Marathon"/>
         <label for="HalfM">Half Marathon</label>
       </div>
       <div>
-        <input type="radio" id="Marathon" />
+        <input type="radio" id="Marathon" name="Distance" value="Full Marathon"/>
         <label for="Marathon">Full Marathon</label>
       </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" required>
-    <label for="Password">Password</label>
-    <input type="password" id="Password" required>
-    
-    <p>
-    <label for="AgeGroup">Select Age Group</label>
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="Password">Password</label>
+      <input type="password" id="Password" required />
+
+      <p>
+        <label for="AgeGroup">Select Age Group</label>
         <select name="Age" id="AgeGroup">
           <option value="Under 18">Under 18</option>
           <option value="18-30">18-30</option>
           <option value="30-50">30-50</option>
           <option value="50+">50+</option>
-            
-    </p>
-    <button>Submit</button>
+        </select>
+      </p>
+      <button type="submit">Register</button>
     </form>
   </body>
 </html>
